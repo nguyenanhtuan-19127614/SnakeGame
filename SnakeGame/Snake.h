@@ -71,9 +71,6 @@ public:
 	Board() 
 	{ 	
 		result = true;
-		DrawBoard();
-		foods.drawFood();
-		player.DrawSnake();
 	};
 
 	void rule()
@@ -125,5 +122,5 @@ public:
 		}
 	}
 };
-
+void Menu();
 #endif // !Snake.h

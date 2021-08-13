@@ -113,3 +113,58 @@ void Food::drawFood()
 	gotoxy(body.x,body.y);
 	cout << 'O';
 }
+
+void Menu()
+{
+	int choice;
+	do
+	{
+		DrawBoard();
+		gotoxy(width / 3, 1);
+		cout << "SNAKE GAME";
+		gotoxy(width / 3, 2);
+		cout << "PlayGame:<1>";
+		gotoxy(width / 3, 3);
+		cout << "TUTORIAL<2>";
+		gotoxy(width / 3, 4);
+		cout << "Quit:<0>";
+		gotoxy(width / 4, 5);
+		cout << "Your Choice: ";
+		cin >> choice;
+		if (choice == 2)
+		{
+
+			system("cls");
+			DrawBoard();
+			gotoxy(7, 4);
+			cout << "|W- UP|-|S-DOWN|";
+			gotoxy(6.5, 5);
+			cout << "|A-LEFT|-|D-RIGHT|";
+			gotoxy(3, 6);
+			cout << "**Please turn of UNIKEY** ";
+			gotoxy(0, 7);
+			system("pause");
+		}
+		if (choice == 1)
+		{
+			int choice2;
+			do
+			{
+				system("cls");
+				Board game;
+				game.Start();
+				DrawBoard();
+				gotoxy(width / 3, 1);
+				cout << "GAME OVER ";
+				gotoxy(width / 3.5, 2);
+				cout << "PlayAgain:<1> ";
+				gotoxy(width / 3.5, 3);
+				cout << "Quit:<0> ";
+				gotoxy(width / 4, 4);
+				cout << "Your Choice: ";
+				cin >> choice2;
+			} while (choice2 == 1);
+		}
+		system("cls");
+	} while (choice != 0);
+}

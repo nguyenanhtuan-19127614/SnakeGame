@@ -2,8 +2,6 @@
 
 int main()
 {
-
-	Board game;
-	game.Start();
+	Menu();
 	return 0;
 }
