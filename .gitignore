@@ -31,3 +31,12 @@
 *.exe
 *.out
 *.app
+
+**/.vscode
+**/Debug
+**/Release
+**/.opensdf
+**/x64
+**/x86
+**/.vs
+/.vs/**
